@@ -1,6 +1,6 @@
 package com.xxzhwx.core.utils;
 
-public class StringUtils {
+public final class StringUtils {
     public static final String EMPTY_STRING = "";
 
     public static String join(int[] values, char separator) {

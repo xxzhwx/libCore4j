@@ -4,7 +4,7 @@ import java.net.InetAddress;
 import java.net.Socket;
 import java.nio.channels.SocketChannel;
 
-public class SocketUtils {
+public final class SocketUtils {
     public static String getIp(SocketChannel channel) {
         if (channel == null) {
             return null;

@@ -1,6 +1,6 @@
 package com.xxzhwx.core.utils;
 
-public class TimeUtils {
+public final class TimeUtils {
     public static long now() {
         return System.currentTimeMillis();
     }
