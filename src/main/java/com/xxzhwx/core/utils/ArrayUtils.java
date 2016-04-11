@@ -6,6 +6,21 @@ public final class ArrayUtils {
     public static final int[] EMPTY_INT_ARRAY = new int[0];
     public static final long[] EMPTY_LONG_ARRAY = new long[0];
 
+    public static int[] toPrimitive(Integer[] values, int valueForNull) {
+        if (values == null) {
+            return null;
+        } else if (values.length == 0) {
+            return EMPTY_INT_ARRAY;
+        } else {
+            int[] result = new int[values.length];
+            for (int i = 0; i < result.length; ++i) {
+                Integer value = values[i];
+                result[i] = value != null ? value : valueForNull;
+            }
+            return result;
+        }
+    }
+
     public static byte min(byte[] values, byte defValue) {
         if (isNullOrEmpty(values)) {
             return defValue;
