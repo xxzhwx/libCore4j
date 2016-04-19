@@ -21,6 +21,12 @@ public class TestCase_TimeUtils implements TestCase {
             return false;
         }
 
+        Date now = new Date();
+        String formatted = TimeUtils.format(now);
+        System.out.println("formatted: " + formatted);
+        Date parsed = TimeUtils.parse(formatted);
+        System.out.println("parsed: " + parsed);
+
         return true;
     }
 }
