@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.Set;
 
 public class ChannelPoller extends Thread {
-   public static interface Handler {
+   public interface Handler {
      void handleRead(Session session);
      void handleWrite(Session session);
    }

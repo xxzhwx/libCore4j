@@ -27,7 +27,7 @@ public class ChannelConnector extends Thread {
     }
   }
 
-  public static interface ConnectHandler {
+  public interface ConnectHandler {
     void handleConnectSuccess(Session session);
 
     void handleConnectFail(ConnectInfo connInfo);
